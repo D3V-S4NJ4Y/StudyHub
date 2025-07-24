@@ -258,7 +258,46 @@ const allSubjectsData = {
         'Gate Academy Book': 'https://drive.google.com/file/d/1ie_wvVXrM_UUI_F-LYUrQ4el4QDI-w_o/view?usp=drive_link'
       }
     }
-  }
+  },
+  'basic-electrical-and-electronics-engineering': {
+    name: 'Basic Electrical and Electronics Engineering',
+    semester: 1,
+    description: 'Introduction to electrical circuits, components, and basic electronics principles.',
+    icon: 'chart',
+    units: ['D.C. Networks', 'A.C. Circuits', ' Single phase Transformers', 'Diode', 'Transistor'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1EatehaLw92WOv5MhQJmJLiro6oXePHST/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/1FjLwbF_Kqp9I6RAYVaQVIi92-1csqvlk/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1hUFPXGQUkrzsMFGuDqf5y7pO7TYmFMsB/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/1zmHicK70mwny1IQ4DzOEQ0e1DMW9vzfr/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/16w1gOWxjGpkBpfwD_Yq9xulc7F63AeRQ/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/1XW7o1JJChsEa7N-n_rwMlNnoSX7IsHk9/view?usp=drive_link',
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/13Ddw0dJ7wGAzCqvhVHq3GWphXzFsURK2/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1LiCjrP6oDWsYczKVh3Jiu2q9GTvbjZwx/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1q7S-TiRWRP_cXAipCKcNIt137RequErk/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/19fHRB96p2nx82MIwjWnVidMf0oAbBNAP/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1AdHqZfJsQJaGhmYOjLBqsVdI1KOARD5F/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/193rze42n1B5xvEwSJNPAEP1gWif7-Gx4/view?usp=drive_link',
+          '2020': 'https://drive.google.com/file/d/1imDrr3GwUc0PnIgxNZcKj5vYfsprDt5v/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1bMElMT_WegA_fDCavvaYXs-d1xWtFkCJ/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1DBMdkn8OE-v2MyPF5vYUFPI7bhjuzFto/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1xubzn41vdTU_pBhdHUchtQ-YeDQcnyKj/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1BdVju8vigbBV1-mxvHa8ztz0ukXAtend/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1Hk_JRpj5R4Va4VuipR4058gxX6C5HubJ/view?usp=drive_link'
+      }
+    }
+  },
 };
 
 export default function SubjectPage() {
