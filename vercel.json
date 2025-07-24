@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "buildCommand": "next build",
@@ -16,3 +17,22 @@
     }
   ]
 }
+=======
+{
+  "version": 2,
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
+>>>>>>> 09b9700 (Initial commit)

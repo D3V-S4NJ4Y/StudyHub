@@ -36,7 +36,7 @@ export default function Home() {
     },
     {
       icon: Star,
-      value: "4.9",
+      value: "4.5",
       label: "User Rating",
       color: "text-amber-400"
     }
@@ -143,7 +143,7 @@ export default function Home() {
     },
     {
       name: "Kamalneet Kaur",
-      role: "Computer Science Student",
+      role: "Computer Science Student ",
       image: "/img/kamal.png",
       quote: "I was struggling with complex engineering concepts until I found StudyHub. The notes and resources made everything so much clearer."
     }
