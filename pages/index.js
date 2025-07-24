@@ -18,13 +18,13 @@ export default function Home() {
   const stats = [
     {
       icon: BookOpen,
-      value: "500+",
+      value: "1K+",
       label: "Study Materials",
       color: "text-purple-400"
     },
     {
       icon: FileText,
-      value: "300+",
+      value: ".5K+",
       label: "Previous Papers",
       color: "text-pink-400"
     },
@@ -36,7 +36,7 @@ export default function Home() {
     },
     {
       icon: Star,
-      value: "4.5",
+      value: "4.5+",
       label: "User Rating",
       color: "text-amber-400"
     }
