@@ -9,9 +9,9 @@ export default function Semesters() {
   
   const years = [
     { id: 1, name: 'First Year' },
-    { id: 2, name: 'Second Year' },
-    { id: 3, name: 'Third Year' },
-    { id: 4, name: 'Fourth Year' }
+    { id: 2, name: 'Second Year⏳' },
+    { id: 3, name: 'Third Year⏳' },
+    { id: 4, name: 'Fourth Year⏳' }
   ];
   
   const semestersByYear = {

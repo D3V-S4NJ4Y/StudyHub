@@ -298,6 +298,284 @@ const allSubjectsData = {
       }
     }
   },
+  'engineering-graphics-and-design': {
+    name: 'Engineering Graphics and Design',
+    semester: 1,
+    description: 'Introduction to engineering drawing, projection techniques, and computer-aided design (CAD) software.',
+    icon: 'chart',
+    units: ['Introduction to Engineering Drawing', 'Projection', ' Basic concept of drafting software ', 'Drafting using CAD software', '3-D modeling using CAD software'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1WwKHsYeM_AJkmM8k6Li7e7momkGvGk8g/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/1VBjrYcvfqPutzdPE3U8rhMK9yTOcoque/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/11hcjr1ivcOumSVKvAPL8GiPDusdSjoxC/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/11hcjr1ivcOumSVKvAPL8GiPDusdSjoxC/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/11hcjr1ivcOumSVKvAPL8GiPDusdSjoxC/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/153TxAIEsPR2IrGNLLcpThjgXIfR9Eyc3/view?usp=drive_link',
+        solutions: 'https://drive.google.com/file/d/13vVto8k2CtAUm3PMNmIxSxjlPFJfuj2T/view?usp=drive_link'
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/1tvmDGofgBeDb1LuTABAJyIIfOSqeCvL0/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1F2AaO2HXHtgDy7t2_8qDHBhfA2gI7O79/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1989nogkDmWFgnaMuboEfnma0mDqDSrqN/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1N_IOOON8EWSGCK0RlNU548tn--v1W0lt/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1Zefh0nFWAeXWxfELtLIR1XLZMBC2WQcx/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/1TnASsFDGk_YLluIweJ2qblYI-doUMzy2/view?usp=drive_link',
+          '2020': 'https://drive.googlke.com/file/d/1dmh6b-BBClphMLImXdxI87zs8btOt4Yw/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1mkz-bQqvn1LdL-bUWasX-7LAQpfWLqoH/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1yUIbSjTOuBigeYfD-wm3UCrv44QMytwD/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/12rWTC2ggQvigwhFjsGpeHX8GoNaB-E2_/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1uXEMkmMxrJfa2ubEM6QVLLoj1GCa6GMm/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1HtBUD3U8YD4S_CFDCh0af-rBeZb3ShSq/view?usp=drive_link'
+      }
+    }
+  },
+    'fundamentals-of-computer': {
+    name: 'Fundamentals of Computer',
+    semester: 1,
+    description: 'Introduction to basic computer concepts, hardware, software, and application domains.',
+    icon: 'chart',
+    units: ['Fundamentals of Computers', 'Hardware and Software', ' Basic Computer Literacy ', 'Computers and Communication ', 'Application Domains'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1rEA8z9WXMv8vJQoIt5UFcju5Zx9S88s-/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/1gbeFKO97fzSxme91wGciUYwr6hqgWxUO/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1xiyUOuHeiAKeY-RZMUodR0Q_9vntswPd/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/1kJrhB1qELE5oMp6pkt4Lwb7iCjJgsWhB/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/1MGOdSyLEsfpt52_M0YiNbhoZtoszqUSJ/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/1-RoFrn6QWLwPCeXWv14Jdk-299v18zVO/view?usp=drive_link',
+        solutions: 'https://drive.google.com/file/d/1gtUHJEAeHKBPOv5a5QAgk2Y0ArfQ_qJe/view?usp=drive_link'
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/1rDz6vmHggHQFsYWdUQ-O7IAaCEbAi9BN/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1n9t39wQWWNgGM90Do7ANveSTNypRt1lq/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1e4cjCveLmcXzZC3b4koIt9b2Ne9hfwQn/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1kGsFLr2x1EZmhwOmI2rezOJpLuS8Fa1a/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1zL2kwOkk2zwpgpI7ISq-ZKsKWFkhPVdF/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/1zZD39SqNX2wq9TTVbxNKyRhRDh5p2InH/view?usp=drive_link',
+          '2020': 'https://drive.googlke.com/file/d/1dmh6b-BBClphMLImXdxI87zs8btOt4Yw/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1mkz-bQqvn1LdL-bUWasX-7LAQpfWLqoH/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1yUIbSjTOuBigeYfD-wm3UCrv44QMytwD/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/12rWTC2ggQvigwhFjsGpeHX8GoNaB-E2_/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1uXEMkmMxrJfa2ubEM6QVLLoj1GCa6GMm/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1HtBUD3U8YD4S_CFDCh0af-rBeZb3ShSq/view?usp=drive_link'
+      }
+    }
+  },
+
+  'mathematics-ii': {
+    name: 'Mathematics-II',
+    semester: 2,
+    description: 'Advanced mathematical concepts including multivariable calculus, differential equations, and complex variables.',
+    icon: 'chart',
+    units: ['Multivariable Calculus (Integration)', 'First order ordinary differential equations', 'Ordinary differential equations of higher orders ', 'Complex Variable Differentiation ', 'Complex Variable – Integration'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1Mixrqfah0pxUtMCTbBtd7481O_kFcP6p/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/15bSTS-HRVtXn98EUBo56-1It89uTgXa0/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1ou8olW3M8yRNdHt0O-3e_NpfhuIoesZm/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/14HaB2YMHLvYcPa2lttqrduzsIBfe439G/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/1AYmE7LBROSxO207_NKNnUs5ftXZNtPYN/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/1p4tC4TAV3hdvCLWZFd-Zuv8A9DcvmaOh/view?usp=drive_link',
+        solutions: 'https://drive.google.com/file/d/13aamBWOuprVOpRbCe2xSZLTXRjjOvIlf/view?usp=drive_link'
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/13JFGP2_8U0_f1E3ReiKpdaXRLHdTHWSk/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1Ny73j0Jxsl-evH1skWM0qzcTA8Fal42Y/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/14sU3vdQvt9eNihqjKfIWbRFjl9ykj6MM/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1CU4aXjS0NnoPmejSjorltTgx3XdSxuus/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/14-VR-NVGdTzMC2IP9sJSWyeKRyNMyMEx/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2020': 'https://drive.google.com/file/d/1B-icwcIFrzDRuhgB72-eJq49sQDB2-g7/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/192Xo5DAkdurVi6qDDFsYMiKNGv6Uawh_/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1P3qEz29rX3_pi49WlJlQ85iXXsuawVe8/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1utyNedNg5EGFnb9M8MNVBK3WrchU8bHB/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/14a0Fy4RAdM1cuiIVk1pCuyhf1LwjpNmD/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1PYcT2G54kJc3DcERzk_oCypRH7C3rLNH/view?usp=drive_link'
+      }
+    }
+  },
+  'programming-for-problem-solving': {
+    name: 'Programming for Problem Solving',
+    semester: 2,
+    description: 'Introduction to programming concepts, algorithms, and data structures using a high-level programming language.',
+    icon: 'chart',
+    units: ['Introduction', 'Programming Concepts', 'Arrays', 'Function', 'Structure'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1F2byxnT4PAVzzsb-lfMsneW1NjwyHEa4/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/1oa-sYQ9xuiDrHtcYQ6A8J-Haf5WntP7F/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1ZZChOv2eIC4DCLTX2CxAokHVIQKfTBJ7/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/1kfTsG5n93mmvTC4ARrUBGkl_uvOMEoHz/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/1Z_XlmnnFUnUG1FiDeoKGbEyXMhAnhDtp/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/1X-7MU5g0uIAWHagbUzd8BX29J5KI3g0j/view?usp=drive_link',
+        solutions: 'https://drive.google.com/file/d/1K7oP_oVM3ggTdix1CbNRCdHG4nN9GukI/view?usp=drive_link'
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/18PLqq7fV09cXvk87jwIG0Zt4mc8g-DkZ/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1jxGBihsm_09N1YELr46j_tsZfFdq0ArN/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1dO_2hwI8Ug7qHnVKXJ4GB17hPXv2QwZK/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1wM0tn9wxY9eyX67NvwGLBoc0m4_3tumx/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1ATcL5f6ILTVX1DM6-NDLyTWakU2WINkF/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/1dm7t8KfcyZEMplhPyZ6DjrwJxiZfDRvg/view?usp=drive_link',
+          '2020': 'https://drive.google.com/file/d/1jXypQcJ1csaH6MJAChYLm9KQL8OrzKvl/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1fcGBcZx8h79Q39r20gMeFWaXIJdrwdBf/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1BI2_PDw2yFluTPhGxGeQ7a7hQYRtbvZA/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1uzDm7gxHHk5zonLnR-X1Jbtj4js9sW4N/view?usp=drive_link',
+          '2024': ''
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1hOzW9kFw8EoLaeLbOknYftgDein_eRHI/view?usp=drive_link'
+      }
+    }
+  },
+  'basic-civil-engineering-and-mechanics': {
+    name: 'Basic Civil Engineering and Mechanics',
+    semester: 2,
+    description: 'Introduction to civil engineering principles, materials, and basic mechanics concepts.',
+    icon: 'chart',
+    units: ['Building Material', 'Building Construction', ' Surveying & Levelling', 'General System of Forces', 'Analysis of Plane Trusses'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1pwkboiIXZXZEBBdaBERPtdRoc-wnOZoP/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/1vtDLAqkLGXVSdB_YbPpPsGNAAsN4EtT_/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1buqq4nCTKko3YgpBL9PfpYIGPCJ1DLum/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/1iwhHbn2ifZhOOOPxQ74zUR_gdIgteIY_/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/1FqZh1xcMgX48xJlzpr88qR0jgKTkLSe4/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/1P6zcaNipTNe3r2b1Q0GyRbK_2_QrAma5/view?usp=drive_link',
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/1VWEjcLOs0ipUEU-5uG7bB1zIFyaIA0_C/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1j7If8t-1GIyw_9o1C-E2sxzeP3rYPbMJ/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1Zz--pnnrRn2hsKVWu-IegwtHLFV9AmYy/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1TmuHYyGKjmwpXC9Wyqx6PFb8TpTW8T2d/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/16p5BDY5X07sjoP9DtmYgMRb9os1JE5d4/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/1ZxlFZ6RzF864n87688cYw2p3mFJUTavS/view?usp=drive_link',
+          '2020': 'https://drive.google.com/file/d/1LKUidfMMN8W0f0s3_413k1HVYr01EExs/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1daEEC03S9AQKlnyJRdlLgxD3sUjQTdfn/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1Wu5tnHxLF-dGiHUOkjkui9GoU30N2ehp/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1_b_RVYuH3dcp_C3i2paUUqsZmQorHaW-/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1PAN04_GH_WafpkpXKp7b0uvvpJvz5pGS/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1q4s_JVD8OYxYwCQZiCyevdNII99PnqSl/view?usp=drive_link'
+      }
+    }
+  },
+    'chemistry-i': {
+    name: 'Chemistry-I',
+    semester: 2,
+    description: 'Fundamental concepts of chemistry including atomic structure, chemical bonding, and thermodynamics.',
+    icon: 'chart',
+    units: ['Atomic & molecular structure', 'Spectroscopic techniques and applications', 'Use of free energy in Chemical Equilibria', 'Periodic properties', 'Organic reactions and synthesis of drug molecule'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1VvplB6IwBLaCoZPiRK4DJDWOg6YFLFxC/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/1shvAfXMcAvuputBvjtsUeLn8CLWere7i/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1cleU2faqAyO3ycUX9cOlLNdouKVI5M7l/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/1qVz10yAnHPGLS-Y0Lwq1e2Hi41CC-GeE/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/1EFCJjY4gHlWIAFAKqD6--iQ91LwlNjBL/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/10WPM5t9KTOXlgSy23-1GuOCF8THWLitL/view?usp=drive_link',
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/1B6sQMLmYIszKFBDs-FEVzp4oowvs18cA/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/18GVgeV4P34KhuLYslXi9gJd6WqJ2OxYm/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/11AKsRchX_3DGqxQrflC5H_fHkLQyxgYZ/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1rGTWR3RmD_mmqI0whDi6UjRFM-yrjeRM/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/14chKgA8a2CBj5euWm0zVsZsOGXH1N37d/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/1vI94T_T-eAbY6ccrKJbLifJVkY18CJ0n/view?usp=drive_link',
+          '2020': 'https://drive.google.com/file/d/12PAgnEibtfgcFYQkHA04Uhve7iNrf7Hz/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/16QO0ZaRy0F33es87U7VyoVxmDsdPKQ8l/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1fbiAdwUlkRA38PaUUUUHwum7qwvSiduQ/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1SVp0wMY4-2bnvGXrGON8AeUVdYWsiPIi/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1uL2PCemZ8VUH29a6nmn502J5elw7R7Eo/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': ''
+      }
+    }
+  },
+    'english': {
+    name: 'English',
+    semester: 2,
+    description: 'Development of English language skills including vocabulary, writing, and listening comprehension.',
+    icon: 'chart',
+    units: ['Vocabulary Building', 'Basic Writing Skills', 'Identifying Common Errors in Writing', 'Writing Practices', 'Listening'],
+    resources: {
+      notes: {
+        'Unit 1': 'https://drive.google.com/file/d/1ZiKcftJNcRJx7qTVO17pjJzeUWnqJTGD/view?usp=drive_link',
+        'Unit 2': 'https://drive.google.com/file/d/151SzEWZTQc6xJ5LNBNR8xSrYGWex9Jmf/view?usp=drive_link',
+        'Unit 3': 'https://drive.google.com/file/d/1VLQ6wpuUZFsaNRvkMjscw59K7gG3ku_P/view?usp=drive_link',
+        'Unit 4': 'https://drive.google.com/file/d/1UdSbeaeUkYZ1wqWp4l9a7lsaiMRn1NOA/view?usp=drive_link',
+        'Unit 5': 'https://drive.google.com/file/d/13yRBhTCaYx2Q-RHh0URev0EGLcJnm_ZC/view?usp=drive_link'
+      },
+      questionBank: {
+        questions: 'https://drive.google.com/file/d/1MDCAUTcHlXUd57TEW1JIiTxNk1VYDTBY/view?usp=drive_link',
+      },
+      pyq: {
+        'April-May': {
+          '2020': 'https://drive.google.com/file/d/1KtcWNM2C3cN3pIO52ZePL5iiBlxqvNJ0/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1YnrhCa_jkeDRihrmKoMNXcyO9wu3aO5-/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1NWpTCS80Gq6dOJhgEIyjR7PeQoAyu_Sx/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1ITx5MINDcvccOsGVkOO33Y3_RQGC_k0Y/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1E2wTAvaBRPW_9FJKJRlFuHv8RdDYmaKI/view?usp=drive_link'
+        },
+        'Nov-Dec': {
+          '2019': 'https://drive.google.com/file/d/1BsnBj3YdqHt5WNdxs15JDKMuaKTJ1s8B/view?usp=drive_link',
+          '2020': 'https://drive.google.com/file/d/1Di6cTnnGEHr9CGNty-I11TABAVsUiOHt/view?usp=drive_link',
+          '2021': 'https://drive.google.com/file/d/1dfp6ejmZNKFRIWfkZQaXYvWM2PeWddF_/view?usp=drive_link',
+          '2022': 'https://drive.google.com/file/d/1fEda0YfU4xrUbfdgCaTWKZIXp7tsg7IN/view?usp=drive_link',
+          '2023': 'https://drive.google.com/file/d/1LAxvJ4cO1ihfc5-MZ2-g6Y4BxXlqDXpd/view?usp=drive_link',
+          '2024': 'https://drive.google.com/file/d/1LUwO1v6Q9sZd-YHLgAzEgTy-4Q_pCyEQ/view?usp=drive_link'
+        }
+      },
+      books: {
+        'Gate Academy Book': 'https://drive.google.com/file/d/1Ej9i8cczBQ7Gy16tMdyknx2owLUSQVJx/view?usp=drive_link'
+      }
+    }
+  },
+
 };
 
 export default function SubjectPage() {

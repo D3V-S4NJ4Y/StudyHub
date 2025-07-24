@@ -57,42 +57,42 @@ export default function Home() {
       { id: 'chemistry-i', name: 'Chemistry-I' },
       { id: 'english', name: 'English' }
     ]},
-    { id: 'semester3', name: 'Semester 3', subjects: [
+    { id: 'semester3', name: 'Semester3⏳', subjects: [
       { id: 'mathematics-iii', name: 'Mathematics–III' },
       { id: 'data-structures-and-algorithms', name: 'Data Structures and Algorithms' },
       { id: 'operating-systems', name: 'Operating Systems' },
       { id: 'digital-electronics-and-logic-design', name: 'Digital Electronics and Logic Design' },
       { id: 'introduction-in-python', name: 'Introduction in Python' }
     ]},
-    { id: 'semester4', name: 'Semester 4', subjects: [
+    { id: 'semester4', name: 'Semester 4⏳', subjects: [
       { id: 'discrete-structure', name: 'Discrete Structure' },
       { id: 'design-and-analysis-of-algorithms', name: 'Design and Analysis of Algorithms' },
       { id: 'computer-system-architecture', name: 'Computer System Architecture' },
       { id: 'object-oriented-programming-with-java', name: 'Object Oriented Programming with Java' },
       { id: 'database-management-systems', name: 'Database Management Systems' }
     ]},
-    { id: 'semester5', name: 'Semester 5', subjects: [
+    { id: 'semester5', name: 'Semester 5⏳', subjects: [
       { id: 'web-development', name: 'Web Development' },
       { id: 'machine-learning', name: 'Machine Learning' },
       { id: 'compiler-design', name: 'Compiler Design' },
       { id: 'computer-graphics', name: 'Computer Graphics' },
       { id: 'artificial-intelligence', name: 'Artificial Intelligence' }
     ]},
-    { id: 'semester6', name: 'Semester 6', subjects: [
+    { id: 'semester6', name: 'Semester 6⏳', subjects: [
       { id: 'mobile-computing', name: 'Mobile Computing' },
       { id: 'cloud-computing', name: 'Cloud Computing' },
       { id: 'information-security', name: 'Information Security' },
       { id: 'distributed-systems', name: 'Distributed Systems' },
       { id: 'human-computer-interaction', name: 'Human-Computer Interaction' }
     ]},
-    { id: 'semester7', name: 'Semester 7', subjects: [
+    { id: 'semester7', name: 'Semester 7⏳', subjects: [
       { id: 'project-management', name: 'Project Management' },
       { id: 'advanced-algorithms', name: 'Advanced Algorithms' },
       { id: 'big-data-analytics', name: 'Big Data Analytics' },
       { id: 'iot-systems', name: 'IoT Systems' },
       { id: 'blockchain-technology', name: 'Blockchain Technology' }
     ]},
-    { id: 'semester8', name: 'Semester 8', subjects: [
+    { id: 'semester8', name: 'Semester 8⏳', subjects: [
       { id: 'industry-training', name: 'Industry Training' },
       { id: 'major-project', name: 'Major Project' },
       { id: 'entrepreneurship', name: 'Entrepreneurship' },
