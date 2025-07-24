@@ -18,7 +18,7 @@ export default function Home() {
   const stats = [
     {
       icon: BookOpen,
-      value: "1K+ ",
+      value: "1K+",
       label: "Study Materials",
       color: "text-purple-400"
     },
