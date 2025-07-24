@@ -21,7 +21,7 @@ export default function Semesters() {
         name: 'Semester 1',
         subjects: [
           { id: 'mathematics-i', name: 'Mathematics-I' },
-          { id: 'physics', name: 'Physics' },
+          { id: 'physics-i', name: 'Physics-I' },
           { id: 'basic-electrical-and-electronics-engineering', name: 'Basic Electrical and Electronics Engineering' },
           { id: 'engineering-graphics-and-design', name: 'Engineering Graphics and Design' },
           { id: 'fundamentals-of-computer', name: 'Fundamentals of Computer' }
@@ -32,10 +32,10 @@ export default function Semesters() {
         name: 'Semester 2',
         subjects: [
           { id: 'mathematics-ii', name: 'Mathematics-II' },
-          { id: 'applied-physics', name: 'Applied Physics' },
-          { id: 'engineering-mechanics', name: 'Engineering Mechanics' },
-          { id: 'computer-programming', name: 'Computer Programming' },
-          { id: 'workshop-practice', name: 'Workshop Practice' }
+          { id: 'programming-for-problem-solving', name: 'Programming for Problem Solving' },
+          { id: 'basic-civil-engineering-and-mechanics', name: 'Basic Civil Engineering and Mechanics' },
+          { id: 'chemistry-i', name: 'Chemistry-I' },
+          { id: 'english', name: 'English' }
         ]
       }
     ],
@@ -44,22 +44,22 @@ export default function Semesters() {
         id: 3, 
         name: 'Semester 3',
         subjects: [
-          { id: 'data-structures', name: 'Data Structures' },
-          { id: 'digital-electronics', name: 'Digital Electronics' },
-          { id: 'discrete-mathematics', name: 'Discrete Mathematics' },
-          { id: 'computer-organization', name: 'Computer Organization' },
-          { id: 'environmental-science', name: 'Environmental Science' }
+          { id: 'mathematics-iii', name: 'Mathematics–III' },
+          { id: 'data-structures-and-algorithms', name: 'Data Structures and Algorithms' },
+          { id: 'operating-systems', name: 'Operating Systems' },
+          { id: 'digital-electronics-and-logic-design', name: 'Digital Electronics and Logic Design' },
+          { id: 'introduction-in-python', name: 'Introduction in Python' }
         ]
       },
       { 
         id: 4, 
         name: 'Semester 4',
         subjects: [
-          { id: 'algorithms', name: 'Algorithms' },
-          { id: 'database-systems', name: 'Database Systems' },
-          { id: 'operating-systems', name: 'Operating Systems' },
-          { id: 'software-engineering', name: 'Software Engineering' },
-          { id: 'computer-networks', name: 'Computer Networks' }
+          { id: 'discrete-structure', name: 'Discrete Structure' },
+          { id: 'design-and-analysis-of-algorithms', name: 'Design and Analysis of Algorithms' },
+          { id: 'computer-system-architecture', name: 'Computer System Architecture' },
+          { id: 'object-oriented-programming-with-java', name: 'Object Oriented Programming with Java' },
+          { id: 'database-management-systems', name: 'Database Management Systems' }
         ]
       }
     ],
@@ -193,73 +193,12 @@ export default function Semesters() {
                         <ChevronRight className="w-5 h-5 text-gray-400" />
                       </Link>
                     ))}
-                  </div>
+                  </div>  
                 </div>
               </div>
-            ))}
+            ))} 
           </div>
-        </div>
-        
-        {/* Quick Access */}
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold mb-6">Quick Access</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
-              <h3 className="text-xl font-bold mb-3 text-purple-300">Popular Subjects</h3>
-              <div className="space-y-2">
-                <Link href="/subject/mathematics-i" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <BookOpen className="w-4 h-4 mr-2 text-purple-400" />
-                  <span>Mathematics-I</span>
-                </Link>
-                <Link href="/subject/data-structures" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <BookOpen className="w-4 h-4 mr-2 text-blue-400" />
-                  <span>Data Structures</span>
-                </Link>
-                <Link href="/subject/algorithms" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <BookOpen className="w-4 h-4 mr-2 text-green-400" />
-                  <span>Algorithms</span>
-                </Link>
-              </div>
-            </div>
-            
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
-              <h3 className="text-xl font-bold mb-3 text-blue-300">First Year Essentials</h3>
-              <div className="space-y-2">
-                <Link href="/subject/physics" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <BookOpen className="w-4 h-4 mr-2 text-purple-400" />
-                  <span>Physics</span>
-                </Link>
-                <Link href="/subject/engineering-graphics-and-design" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <BookOpen className="w-4 h-4 mr-2 text-blue-400" />
-                  <span>Engineering Graphics</span>
-                </Link>
-                <Link href="/subject/computer-programming" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <BookOpen className="w-4 h-4 mr-2 text-green-400" />
-                  <span>Computer Programming</span>
-                </Link>
-              </div>
-            </div>
-            
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
-              <h3 className="text-xl font-bold mb-3 text-green-300">Navigation</h3>
-              <div className="space-y-2">
-                <Link href="/" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <ChevronRight className="w-4 h-4 mr-2 text-purple-400" />
-                  <span>Home</span>
-                </Link>
-                <Link href="/about" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <ChevronRight className="w-4 h-4 mr-2 text-blue-400" />
-                  <span>About Us</span>
-                </Link>
-                <Link href="/contact" className="flex items-center p-2 hover:bg-white/10 rounded-lg transition-colors">
-                  <ChevronRight className="w-4 h-4 mr-2 text-green-400" />
-                  <span>Contact</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> 
       </div>
     </Layout>
   );

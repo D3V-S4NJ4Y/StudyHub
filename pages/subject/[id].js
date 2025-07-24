@@ -219,8 +219,8 @@ const allSubjectsData = {
       }
     }
   },
-  'physics': {
-    name: 'Physics',
+  'physics-i': {
+    name: 'Physics-i',
     semester: 1,
     description: 'Fundamental physics concepts including mechanics, electromagnetism, and modern physics.',
     icon: 'zap',

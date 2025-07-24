@@ -52,24 +52,24 @@ export default function Home() {
     ]},
     { id: 'semester2', name: 'Semester 2', subjects: [
       { id: 'mathematics-ii', name: 'Mathematics-II' },
-      { id: 'applied-physics', name: 'Applied Physics' },
-      { id: 'engineering-mechanics', name: 'Engineering Mechanics' },
-      { id: 'computer-programming', name: 'Computer Programming' },
-      { id: 'workshop-practice', name: 'Workshop Practice' }
+      { id: 'programming-for-problem-solving', name: 'Programming for Problem Solving' },
+      { id: 'basic-civil-engineering-and-mechanics', name: 'Basic Civil Engineering and Mechanics' },
+      { id: 'chemistry-i', name: 'Chemistry-I' },
+      { id: 'english', name: 'English' }
     ]},
     { id: 'semester3', name: 'Semester 3', subjects: [
-      { id: 'data-structures', name: 'Data Structures' },
-      { id: 'digital-electronics', name: 'Digital Electronics' },
-      { id: 'discrete-mathematics', name: 'Discrete Mathematics' },
-      { id: 'computer-organization', name: 'Computer Organization' },
-      { id: 'environmental-science', name: 'Environmental Science' }
+      { id: 'mathematics-iii', name: 'Mathematics–III' },
+      { id: 'data-structures-and-algorithms', name: 'Data Structures and Algorithms' },
+      { id: 'operating-systems', name: 'Operating Systems' },
+      { id: 'digital-electronics-and-logic-design', name: 'Digital Electronics and Logic Design' },
+      { id: 'introduction-in-python', name: 'Introduction in Python' }
     ]},
     { id: 'semester4', name: 'Semester 4', subjects: [
-      { id: 'algorithms', name: 'Algorithms' },
-      { id: 'database-systems', name: 'Database Systems' },
-      { id: 'operating-systems', name: 'Operating Systems' },
-      { id: 'software-engineering', name: 'Software Engineering' },
-      { id: 'computer-networks', name: 'Computer Networks' }
+      { id: 'discrete-structure', name: 'Discrete Structure' },
+      { id: 'design-and-analysis-of-algorithms', name: 'Design and Analysis of Algorithms' },
+      { id: 'computer-system-architecture', name: 'Computer System Architecture' },
+      { id: 'object-oriented-programming-with-java', name: 'Object Oriented Programming with Java' },
+      { id: 'database-management-systems', name: 'Database Management Systems' }
     ]},
     { id: 'semester5', name: 'Semester 5', subjects: [
       { id: 'web-development', name: 'Web Development' },
@@ -234,50 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section with enhanced design */}
-      <section className="relative z-10 container mx-auto px-6 py-12 my-6">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-purple-900/20 to-transparent opacity-40"></div>
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-500/5 blur-3xl"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-pink-500/5 blur-3xl"></div>
-        </div>
-        
-        <div className="text-center mb-10">
-          <div className="inline-block mb-3">
-            <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
-              Why Choose Us
-            </div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Features That Set Us Apart</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
-            Discover why thousands of engineering students trust StudyHub for their academic success
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="glass-effect-hover rounded-2xl p-8 hover-card group"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 shadow-lg`}>
-                <feature.icon className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-all duration-300">{feature.title}</h3>
-              <p className="text-white/70">{feature.description}</p>
-              
-              {/* Animated arrow on hover */}
-              <div className="mt-6 flex items-center text-purple-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
-                <span className="mr-2">Learn more</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Semester Tabs Section with enhanced design */}
       <section className="relative z-10 container mx-auto px-6 py-12">
         {/* Background decorative elements */}
@@ -381,6 +337,50 @@ export default function Home() {
             <span className="font-medium">View All Semesters</span>
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
+        </div>
+      </section>
+
+      {/* Features Section with enhanced design */}
+      <section className="relative z-10 container mx-auto px-6 py-12 my-6">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-purple-900/20 to-transparent opacity-40"></div>
+          <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-500/5 blur-3xl"></div>
+          <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-pink-500/5 blur-3xl"></div>
+        </div>
+        
+        <div className="text-center mb-10">
+          <div className="inline-block mb-3">
+            <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
+              Why Choose Us
+            </div>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Features That Set Us Apart</h2>
+          <p className="text-lg text-white/70 max-w-3xl mx-auto">
+            Discover why thousands of engineering students trust StudyHub for their academic success
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <div 
+              key={index} 
+              className="glass-effect-hover rounded-2xl p-8 hover-card group"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 shadow-lg`}>
+                <feature.icon className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-all duration-300">{feature.title}</h3>
+              <p className="text-white/70">{feature.description}</p>
+              
+              {/* Animated arrow on hover */}
+              <div className="mt-6 flex items-center text-purple-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
+                <span className="mr-2">Learn more</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

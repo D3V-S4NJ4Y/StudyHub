@@ -11,7 +11,7 @@ import Head from 'next/head';
 // Complete subject data for search suggestions
 const searchSuggestions = [
   { name: 'Mathematics-I', path: '/subject/mathematics-i', semester: 1, category: 'First Year' },
-  { name: 'Physics', path: '/subject/physics', semester: 1, category: 'First Year' },
+  { name: 'Physics-I', path: '/subject/physics-i', semester: 1, category: 'First Year' },
   { name: 'Basic Electrical and Electronics Engineering', path: '/subject/basic-electrical-and-electronics-engineering', semester: 1, category: 'First Year' },
   { name: 'Engineering Graphics and Design', path: '/subject/engineering-graphics-and-design', semester: 1, category: 'First Year' },
   { name: 'Fundamentals of Computer', path: '/subject/fundamentals-of-computer', semester: 1, category: 'First Year' },
@@ -417,17 +417,42 @@ const Layout = ({ children }) => {
         <footer className="mt-20 border-t border-white/5 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent opacity-30"></div>
           <div className="container mx-auto px-6 py-8 relative z-10">
-            <div className="text-center">
-              <div className="flex items-center justify-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-4 h-4" />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+              <div className="md:col-span-2">
+                <div className="flex items-center space-x-2 mb-4">
+                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                    <Sparkles className="w-4 h-4" />
+                  </div>
+                  <h2 className="text-xl font-bold text-gradient">StudyHub</h2>
                 </div>
-                <h2 className="text-xl font-bold text-gradient">StudyHub</h2>
+                <p className="text-white/60 text-sm max-w-md">
+                  Your comprehensive platform for engineering study materials, resources, and academic excellence.
+                </p>
               </div>
-              <p className="text-white/60 text-sm max-w-md mx-auto">
-                Your comprehensive platform for engineering study materials, resources, and academic excellence.
-              </p>
-              <div className="mt-8 text-white/40 text-xs">
+              
+              <div>
+                <h6 className="font-semibold mb-4">Quick Links</h6>
+                <ul className="space-y-2 text-gray-400">
+                  <li><Link href="/semesters" className="hover:text-purple-300 transition-colors">Semesters</Link></li>
+                  <li><Link href="/resources" className="hover:text-purple-300 transition-colors">Resources</Link></li>
+                  <li><Link href="/about" className="hover:text-purple-300 transition-colors">About Us</Link></li>
+                  <li><Link href="/contact" className="hover:text-purple-300 transition-colors">Contact</Link></li>
+                </ul>
+              </div>
+              
+              <div>
+                <h6 className="font-semibold mb-4">Connect</h6>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="https://discord.gg/FdPmrfkd" className="hover:text-purple-300 transition-colors">Discord</a></li>
+                  <li><a href="https://t.me/rcetr1" className="hover:text-purple-300 transition-colors">Telegram</a></li>
+                  <li><a href="https://whatsapp.com/channel/0029VbBdCJ5C6ZvZwJzcHo2v" className="hover:text-purple-300 transition-colors">WhatsApp</a></li>
+                  <li><a href="mailto:sanjay.dev925@gmail.com" className="hover:text-purple-300 transition-colors">Email</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="border-t border-white/5 pt-6 text-center">
+              <div className="text-white/40 text-xs">
                 © {new Date().getFullYear()} StudyHub. All rights reserved.
               </div>
             </div>
