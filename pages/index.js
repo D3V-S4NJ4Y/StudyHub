@@ -375,10 +375,10 @@ export default function Home() {
               <p className="text-white/70">{feature.description}</p>
               
               {/* Animated arrow on hover */}
-              <div className="mt-6 flex items-center text-purple-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
+              <Link href="/resources" className="mt-6 flex items-center text-purple-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
                 <span className="mr-2">Learn more</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </div>
+              </Link>
             </div>
           ))}
         </div>
