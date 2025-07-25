@@ -996,7 +996,7 @@ export default function SubjectPage() {
                   </h4>
                   
                   <div className="space-y-3">
-                    {['2024', '2023', '2022', '2021', '2020'].map(year => (
+                    {Object.keys(subject.resources.pyq['April-May']).sort((a, b) => b.localeCompare(a)).map(year => (
                       <button
                         key={year}
                         onClick={() => handleResourceClick('pyq', null, 'April-May', year)}
@@ -1020,7 +1020,7 @@ export default function SubjectPage() {
                   </h4>
                   
                   <div className="space-y-3">
-                    {['2024', '2023', '2022', '2021', '2020'].map(year => (
+                    {Object.keys(subject.resources.pyq['Nov-Dec']).sort((a, b) => b.localeCompare(a)).map(year => (
                       <button
                         key={year}
                         onClick={() => handleResourceClick('pyq', null, 'Nov-Dec', year)}
