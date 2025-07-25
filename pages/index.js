@@ -45,7 +45,7 @@ export default function Home() {
   const semesters = [
     { id: 'semester1', name: 'Semester 1', subjects: [
       { id: 'mathematics-i', name: 'Mathematics-I' },
-      { id: 'physics', name: 'Physics' },
+      { id: 'physics-i', name: 'Physics' },
       { id: 'basic-electrical-and-electronics-engineering', name: 'Basic Electrical and Electronics Engineering' },
       { id: 'engineering-graphics-and-design', name: 'Engineering Graphics and Design' },
       { id: 'fundamentals-of-computer', name: 'Fundamentals of Computer' }

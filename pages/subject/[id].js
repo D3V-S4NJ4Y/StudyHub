@@ -176,6 +176,7 @@ const iconComponents = {
   layers: FileText,
   settings: Search
 };
+
 // Subject data for all 8 semesters
 const allSubjectsData = {
   'mathematics-i': {
@@ -183,7 +184,7 @@ const allSubjectsData = {
     semester: 1,
     description: 'Fundamental mathematical concepts for engineering including calculus, differential equations, and linear algebra.',
     icon: 'chart',
-    units: ['Calculus', 'Calculus', 'Sequences and series', 'Multivariable Calculus (Differentiation) ', 'Matrices'],
+    units: ['Calculus (Limits & Continuity)', 'Calculus (Differentiation)', 'Sequences and series', 'Multivariable Calculus (Differentiation) ', 'Matrices'],
     resources: {
       notes: {
         'Unit 1': 'https://drive.google.com/file/d/1EmOOsY38rFs2eb3uq8WS6WTX1Zbuu9l7/view?usp=drive_link',
