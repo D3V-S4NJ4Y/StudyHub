@@ -194,7 +194,7 @@ const allSubjectsData = {
         'Unit 5': 'https://drive.google.com/file/d/1L8Lo7YwIBo12tryIhv72QZNaENpYfSP0/view?usp=drive_link'
       },
       questionBank: {
-        questions: 'https://drive.google.com/file/d/1bboSS0LErBGYABEL9lS6_WVVcUsaIKfL/view?usp=drive_link',
+        questions: 'https://drive.google.com/file/d/1WSaHi9Bedt-ETF-VdWZcbuIc_Svg2Zcq/view?usp=drive_link',
         solutions: 'https://drive.google.com/file/d/1v-vQcsyw2u0LFpg0Aceuo603-rflowd-/view?usp=drive_link'
       },
       pyq: {
@@ -434,7 +434,7 @@ const allSubjectsData = {
       },
       questionBank: {
         questions: 'https://drive.google.com/file/d/1X-7MU5g0uIAWHagbUzd8BX29J5KI3g0j/view?usp=drive_link',
-        solutions: 'https://drive.google.com/file/d/1K7oP_oVM3ggTdix1CbNRCdHG4nN9GukI/view?usp=drive_link'
+        solutions: 'https://drive.google.com/file/d/1V1Y5ba0kKHqvqtwpDbsY85_19VfQOUYe/view?usp=drive_link'
       },
       pyq: {
         'April-May': {
