@@ -176,7 +176,6 @@ const iconComponents = {
   layers: FileText,
   settings: Search
 };
-
 // Subject data for all 8 semesters
 const allSubjectsData = {
   'mathematics-i': {
