@@ -215,8 +215,7 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': 'https://drive.google.com/file/d/1qcMjPWzf3NKXf24z4waWcD8NA33MoYZv/view?usp=drive_link',
-        'Important Questions': 'https://drive.google.com/file/d/19lMY_X9GJLY1qHF0nQNha-5KF8ZV791_/view?usp=drive_link'
+        'Gate Academy Book': 'https://drive.google.com/file/d/1qcMjPWzf3NKXf24z4waWcD8NA33MoYZv/view?usp=drive_link'
       }
     }
   },
