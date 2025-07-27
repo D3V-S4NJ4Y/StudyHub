@@ -864,20 +864,20 @@ export default function SubjectPage() {
               </div>
             </div>
             
-            <div className="flex items-center space-x-3">
+            <div className="flex flex-wrap items-center gap-3 sm:flex-nowrap">
               <button 
                 onClick={() => handleResourceClick('book')}
-                className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors flex items-center space-x-2"
+                className="w-full sm:w-auto px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors flex items-center justify-center space-x-2 whitespace-nowrap"
               >
-                <BookMarked className="w-5 h-5" />
+                <BookMarked className="w-5 h-5 flex-shrink-0" />
                 <span>Gate Academy Book</span>
               </button>
               {subject.resources.books['Important Questions'] && (
                 <button 
                   onClick={() => handleResourceClick('impQuestions')}
-                  className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors flex items-center space-x-2"
+                  className="w-full sm:w-auto px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors flex items-center justify-center space-x-2 whitespace-nowrap"
                 >
-                  <FileText className="w-5 h-5" />
+                  <FileText className="w-5 h-5 flex-shrink-0" />
                   <span>Important Questions</span>
                 </button>
               )}
