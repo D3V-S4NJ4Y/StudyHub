@@ -458,7 +458,8 @@ const allSubjectsData = {
       },
       books: {
         'Gate Academy Book': 'https://drive.google.com/file/d/1hOzW9kFw8EoLaeLbOknYftgDein_eRHI/view?usp=drive_link',
-        'Important Questions': 'https://drive.google.com/file/d/1KVXb5OFh2hEXF8pshmRLzSpbzqD_e9Hu/view?usp=drive_link'
+        'Important Questions': 'https://drive.google.com/file/d/1KVXb5OFh2hEXF8pshmRLzSpbzqD_e9Hu/view?usp=drive_link',
+        'PYQ Solutions': 'https://drive.google.com/file/d/1DGPR3H1qQehKWjU8kstj0krG5ByJAX7x/view?usp=drive_link'
       }
     }
   },
@@ -711,6 +712,9 @@ export default function SubjectPage() {
     } else if (resourceType === 'impQuestions' && subject.resources.books['Important Questions']) {
       url = subject.resources.books['Important Questions'];
       resourceName = `${subject.name} - Important Questions`;
+    } else if (resourceType === 'PYQSolutions' && subject.resources.books['PYQ Solutions']) {
+      url = subject.resources.books['PYQ Solutions'];
+      resourceName = `${subject.name} - PYQ Solutions`;
     }
     
     if (url) {
@@ -879,6 +883,15 @@ export default function SubjectPage() {
                 >
                   <FileText className="w-5 h-5 flex-shrink-0" />
                   <span>Important Questions</span>
+                </button>
+              )}
+              {subject.resources.books['PYQ Solutions'] && (
+                <button 
+                  onClick={() => handleResourceClick('PYQSolutions')}
+                  className="w-full sm:w-auto px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors flex items-center justify-center space-x-2 whitespace-nowrap"
+                >
+                  <FileText className="w-5 h-5 flex-shrink-0" />
+                  <span>PYQ Solutions</span>
                 </button>
               )}
             </div>
