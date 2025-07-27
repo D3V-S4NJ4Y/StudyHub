@@ -215,7 +215,8 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': 'https://drive.google.com/file/d/1qcMjPWzf3NKXf24z4waWcD8NA33MoYZv/view?usp=drive_link'
+        'Gate Academy Book': 'https://drive.google.com/file/d/1qcMjPWzf3NKXf24z4waWcD8NA33MoYZv/view?usp=drive_link',
+        'Important Questions': 'https://drive.google.com/file/d/19lMY_X9GJLY1qHF0nQNha-5KF8ZV791_/view?usp=drive_link'
       }
     }
   },
@@ -294,7 +295,8 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': 'https://drive.google.com/file/d/1Hk_JRpj5R4Va4VuipR4058gxX6C5HubJ/view?usp=drive_link'
+        'Gate Academy Book': 'https://drive.google.com/file/d/1Hk_JRpj5R4Va4VuipR4058gxX6C5HubJ/view?usp=drive_link',
+        'Important Questions': 'https://drive.google.com/file/d/1ASgJEa4VFX3pHn7rBOWihR2_6MNTOM_k/view?usp=drive_link'
       }
     }
   },
@@ -334,7 +336,8 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': 'https://drive.google.com/file/d/1HtBUD3U8YD4S_CFDCh0af-rBeZb3ShSq/view?usp=drive_link'
+        'Gate Academy Book': 'https://drive.google.com/file/d/1HtBUD3U8YD4S_CFDCh0af-rBeZb3ShSq/view?usp=drive_link',
+        'Important Questions': 'https://drive.google.com/file/d/1Vjz36RgnbpwW95BjfWpHGNMrMt_cGon7/view?usp=drive_link'
       }
     }
   },
@@ -374,7 +377,8 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': 'https://drive.google.com/file/d/1HtBUD3U8YD4S_CFDCh0af-rBeZb3ShSq/view?usp=drive_link'
+        'Gate Academy Book': 'https://drive.google.com/file/d/1HtBUD3U8YD4S_CFDCh0af-rBeZb3ShSq/view?usp=drive_link',
+        'Important Questions': 'https://drive.google.com/file/d/1TV8YbGmaUwMPTLqzYudBVJojmZPwRAPr/view?usp=drive_link'
       }
     }
   },
@@ -454,7 +458,8 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': 'https://drive.google.com/file/d/1hOzW9kFw8EoLaeLbOknYftgDein_eRHI/view?usp=drive_link'
+        'Gate Academy Book': 'https://drive.google.com/file/d/1hOzW9kFw8EoLaeLbOknYftgDein_eRHI/view?usp=drive_link',
+        'Important Questions': 'https://drive.google.com/file/d/1KVXb5OFh2hEXF8pshmRLzSpbzqD_e9Hu/view?usp=drive_link'
       }
     }
   },
@@ -514,6 +519,10 @@ const allSubjectsData = {
       questionBank: {
         questions: 'https://drive.google.com/file/d/10WPM5t9KTOXlgSy23-1GuOCF8THWLitL/view?usp=drive_link',
       },
+      books: {
+        'Gate Academy Book': '',
+        'Important Questions': 'https://drive.google.com/file/d/1rlmJ9V1nK8hc4ByanCuXmECAokpZR96U/view?usp=drive_link'
+      },
       pyq: {
         'April-May': {
           '2020': 'https://drive.google.com/file/d/1B6sQMLmYIszKFBDs-FEVzp4oowvs18cA/view?usp=drive_link',
@@ -532,7 +541,8 @@ const allSubjectsData = {
         }
       },
       books: {
-        'Gate Academy Book': ''
+        'Gate Academy Book': '',
+        'Important Questions': 'https://drive.google.com/file/d/1rlmJ9V1nK8hc4ByanCuXmECAokpZR96U/view?usp=drive_link'
       }
     }
   },
@@ -699,6 +709,9 @@ export default function SubjectPage() {
     } else if (resourceType === 'book' && subject.resources.books['Gate Academy Book']) {
       url = subject.resources.books['Gate Academy Book'];
       resourceName = `${subject.name} - Gate Academy Book`;
+    } else if (resourceType === 'impQuestions' && subject.resources.books['Important Questions']) {
+      url = subject.resources.books['Important Questions'];
+      resourceName = `${subject.name} - Important Questions`;
     }
     
     if (url) {
@@ -860,6 +873,15 @@ export default function SubjectPage() {
                 <BookMarked className="w-5 h-5" />
                 <span>Gate Academy Book</span>
               </button>
+              {subject.resources.books['Important Questions'] && (
+                <button 
+                  onClick={() => handleResourceClick('impQuestions')}
+                  className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors flex items-center space-x-2"
+                >
+                  <FileText className="w-5 h-5" />
+                  <span>Important Questions</span>
+                </button>
+              )}
             </div>
           </div>
           
