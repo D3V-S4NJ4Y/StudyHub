@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { 
   BookOpen, FileText, Users, Star, ChevronRight, Search, Calendar, Trophy, Zap,
   ArrowRight, Lightbulb, CheckCircle, BarChart3, Download
-} from 'lucide-react';
+} from 'lucide-react'; 
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
