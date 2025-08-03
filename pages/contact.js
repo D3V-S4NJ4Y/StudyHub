@@ -280,12 +280,12 @@ export default function Contact() {
                 {/* Connect Button */}
                 <div className="flex justify-center relative z-10">
                   <a 
-                    href="https://www.linkedin.com/in/sanjay127/" 
+                    href="https://portfolio-indol-five-26.vercel.app" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="gradient-button px-6 py-3 rounded-xl inline-flex items-center space-x-2 group"
                   >
-                    <span>Connect with me</span>
+                    <span>See Portfolio</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </a>
                 </div>
