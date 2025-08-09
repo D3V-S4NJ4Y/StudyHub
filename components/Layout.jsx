@@ -347,7 +347,7 @@ const Layout = ({ children }) => {
                   <Terminal className="w-4 h-4 text-white" />
                 </div>
                 <h1 className="text-xl font-bold text-gradient-neural font-display">StudyHub</h1>
-                <span className="text-xs text-teal-400/60 mono hidden lg:block">[v3.0]</span>
+                <span className="text-xs text-teal-400/60 mono hidden lg:block">[v3.5]</span>
               </div>
             </div>
             
