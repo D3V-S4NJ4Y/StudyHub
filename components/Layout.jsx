@@ -567,7 +567,7 @@ const Layout = ({ children }) => {
               <div className={`text-xs mono ${
                 darkMode ? 'text-teal-400/40' : 'text-slate-600'
               }`}>
-                &gt; info: © {new Date().getFullYear()} StudyHub | version 3.0 | all_rights_reserved
+                &gt; info: © {new Date().getFullYear()} StudyHub | version 3.5 | all rights reserved
               </div>
               <div className={`text-xs mono mt-1 ${
                 darkMode ? 'text-emerald-400/40' : 'text-slate-600'
