@@ -948,6 +948,18 @@ td {
   @apply !text-slate-700;
 }
 
+/* Fix placeholder text visibility in light mode */
+:root:not(.dark-mode) input::placeholder,
+:root:not(.dark-mode) textarea::placeholder {
+  color: rgb(100 116 139) !important; /* slate-500 */
+  opacity: 1;
+}
+
+:root:not(.dark-mode) .placeholder-white\/40::placeholder {
+  color: rgb(100 116 139) !important; /* slate-500 */
+  opacity: 1;
+}
+
 /* Override any opacity-based light colors */
 :root:not(.dark-mode) [class*="text-white/"],
 :root:not(.dark-mode) [class*="text-gray-100/"],
