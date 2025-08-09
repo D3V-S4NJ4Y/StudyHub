@@ -237,7 +237,7 @@ const Layout = ({ children }) => {
                   <h1 className="text-lg font-bold text-gradient-neural">
                     StudyHub
                   </h1>
-                  <p className="text-xs text-teal-400/70 mono">AI/ML Hub</p>
+                  <p className="text-xs text-teal-400/70 mono">Engineering Hub</p>
                 </div>
               </div>
               <button 
@@ -500,7 +500,7 @@ const Layout = ({ children }) => {
                 <p className={`text-sm max-w-md mono ${
                   darkMode ? 'text-teal-400/60' : 'text-slate-700'
                 }`}>
-                  &gt; AI-powered platform for engineering study materials, ML resources, and academic excellence.
+                  &gt; Platform for engineering study materials, ML resources, and academic excellence.
                 </p>
               </div>
               
