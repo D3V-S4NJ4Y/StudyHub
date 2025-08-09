@@ -130,9 +130,9 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Sanjay Kumar",
+      name: "Raushan Kumar",
       role: "Computer Science Student",
-      image: "/img/sanjay.png",
+      image: "/img/raushan.png",
       quote: "StudyHub has been a game-changer for my academic performance. The organized study materials and previous year papers helped me score top marks in my exams."
     },
     {
