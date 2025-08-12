@@ -290,9 +290,9 @@ const Layout = ({ children }) => {
                     <BookMarked className="h-6 w-6 mb-2 text-purple-400" />
                     <span className="text-sm">Resources</span>
                   </Link>
-                  <Link href="/resources" className="glass-effect-hover p-3 rounded-xl flex flex-col items-center justify-center text-center hover-card">
+                  <Link href="/service" className="glass-effect-hover p-3 rounded-xl flex flex-col items-center justify-center text-center hover-card">
                     <Code className="h-6 w-6 mb-2 text-emerald-400" />
-                    <span className="text-sm">Labs</span>
+                    <span className="text-sm">My Service</span>
                   </Link>
                 </div>
               </div>

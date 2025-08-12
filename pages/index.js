@@ -194,10 +194,10 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="/about" 
+              href="/service" 
               className="glass-effect-hover px-8 py-4 text-lg font-medium border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300 button-3d"
             >
-              Learn More
+              My service
             </Link>
           </div>
         </div>
