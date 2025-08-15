@@ -128,26 +128,7 @@ export default function Home() {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Raushan Kumar",
-      role: "Computer Science Student",
-      image: "/img/raushan.png",
-      quote: "StudyHub has been a game-changer for my academic performance. The organized study materials and previous year papers helped me score top marks in my exams."
-    },
-    {
-      name: "Tushar Sahu",
-      role: "Computer Science Student",
-      image: "/img/tushar.png",
-      quote: "The quality of notes and question banks on StudyHub is exceptional. I've recommended it to all my classmates, and they love it too!"
-    },
-    {
-      name: "Kamalneet Kaur",
-      role: "Computer Science Student ",
-      image: "/img/kamal.png",
-      quote: "I was struggling with complex engineering concepts until I found StudyHub. The notes and resources made everything so much clearer."
-    }
-  ];
+
 
   return (
     <Layout>
@@ -384,62 +365,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section with enhanced design */}
-      <section className="relative z-10 container mx-auto px-6 py-12 my-6">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-conic from-purple-900/10 via-pink-900/10 to-blue-900/10 opacity-30"></div>
-        </div>
-        
-        <div className="text-center mb-10">
-          <div className="inline-block mb-3">
-            <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
-              Testimonials
-            </div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">What Students Say</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
-            Hear from our community of engineering students about their experience with StudyHub
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="frosted-card p-6 pt-4 relative hover-card group h-full flex flex-col"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              {/* Decorative quote marks */}
-              <div className="absolute top-4 left-4 text-4xl text-purple-500/10 font-serif">"</div>
-              <div className="absolute bottom-4 right-4 text-4xl text-purple-500/10 font-serif rotate-180">"</div>
-              
-              {/* Profile image with glow effect */}
-              <div className="relative mt-4 mb-3 flex justify-center">
-                <div className="relative">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name} 
-                    className="relative w-14 h-14 rounded-full border-2 border-purple-500 object-cover"
-                  />
-                </div>
-              </div>
-              
-              <div className="relative z-10 flex-1 flex flex-col">
-                <p className="text-white/80 mb-4 italic leading-relaxed text-center text-sm flex-1">"{testimonial.quote}"</p>
-                <div className="border-t border-white/10 pt-3 text-center mt-auto">
-                  <h4 className="font-bold text-gradient">{testimonial.name}</h4>
-                  <p className="text-xs text-white/60">{testimonial.role}</p>
-                </div>
-              </div>
-              
-              {/* Animated border on hover */}
-              <div className="absolute inset-0 rounded-2xl border border-transparent bg-gradient-to-r from-purple-500/0 via-purple-500/50 to-pink-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-            </div>
-          ))}
-        </div>
-      </section>
+
     </Layout>
   );
 }
