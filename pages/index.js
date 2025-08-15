@@ -4,15 +4,20 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import { 
   BookOpen, FileText, Users, Star, ChevronRight, Search, Calendar, Trophy, Zap,
-  ArrowRight, Lightbulb, CheckCircle, BarChart3, Download
+  ArrowRight, Lightbulb, CheckCircle, BarChart3, Download, X
 } from 'lucide-react'; 
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [activeTab, setActiveTab] = useState('semester1');
+  const [showTelegramPopup, setShowTelegramPopup] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
+    const timer = setTimeout(() => {
+      setShowTelegramPopup(true);
+    }, 3000);
+    return () => clearTimeout(timer);
   }, []);
 
   const stats = [
@@ -365,7 +370,42 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* Telegram Popup */}
+      {showTelegramPopup && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center p-4 pt-20">
+          <div className="frosted-card p-6 max-w-md w-full relative animate-fade-in">
+            <button 
+              onClick={() => setShowTelegramPopup(false)}
+              className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gradient mb-2">Join Our Community!</h3>
+              <p className="text-white/70 mb-6">Get instant updates, study tips, and connect with fellow students on Telegram.</p>
+              <div className="flex gap-3">
+                <a 
+                  href="https://t.me/rcetr1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="gradient-button px-6 py-3 text-sm font-medium flex-1"
+                >
+                  Join Telegram
+                </a>
+                <button 
+                  onClick={() => setShowTelegramPopup(false)}
+                  className="px-6 py-3 text-sm font-medium border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300"
+                >
+                  Later
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }
