@@ -55,4 +55,4 @@ To enable the contact form to send emails:
    - Replace `'template_id'` with your EmailJS template ID
    - Replace `'public_key'` with your EmailJS public key
 
-After setting up EmailJS, the contact form will send emails to your specified email address.
+After setting up EmailJS, the contact form will send emails to your specified email address...
