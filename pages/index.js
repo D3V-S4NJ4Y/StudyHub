@@ -1,411 +1,411 @@
-import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
-import Layout from '../components/Layout';
-import Link from 'next/link';
-import { 
-  BookOpen, FileText, Users, Star, ChevronRight, Search, Calendar, Trophy, Zap,
-  ArrowRight, Lightbulb, CheckCircle, BarChart3, Download, X
-} from 'lucide-react'; 
+// import React, { useState, useEffect } from 'react';
+// import Head from 'next/head';
+// import Layout from '../components/Layout';
+// import Link from 'next/link';
+// import { 
+//   BookOpen, FileText, Users, Star, ChevronRight, Search, Calendar, Trophy, Zap,
+//   ArrowRight, Lightbulb, CheckCircle, BarChart3, Download, X
+// } from 'lucide-react'; 
 
-export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [activeTab, setActiveTab] = useState('semester1');
-  const [showTelegramPopup, setShowTelegramPopup] = useState(false);
+// export default function Home() {
+//   const [isLoaded, setIsLoaded] = useState(false);
+//   const [activeTab, setActiveTab] = useState('semester1');
+//   const [showTelegramPopup, setShowTelegramPopup] = useState(false);
 
-  useEffect(() => {
-    setIsLoaded(true);
-    const timer = setTimeout(() => {
-      setShowTelegramPopup(true);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+//   useEffect(() => {
+//     setIsLoaded(true);
+//     const timer = setTimeout(() => {
+//       setShowTelegramPopup(true);
+//     }, 3000);
+//     return () => clearTimeout(timer);
+//   }, []);
 
-  const stats = [
-    {
-      icon: BookOpen,
-      value: "1K+",
-      label: "Study Materials",
-      color: "text-purple-400"
-    },
-    {
-      icon: FileText,
-      value: ".5K+",
-      label: "Previous Papers",
-      color: "text-pink-400"
-    },
-    {
-      icon: Users,
-      value: "10K+",
-      label: "Active Students",
-      color: "text-blue-400"
-    },
-    {
-      icon: Star,
-      value: "4.5+",
-      label: "User Rating",
-      color: "text-amber-400"
-    }
-  ];
+//   const stats = [
+//     {
+//       icon: BookOpen,
+//       value: "1K+",
+//       label: "Study Materials",
+//       color: "text-purple-400"
+//     },
+//     {
+//       icon: FileText,
+//       value: ".5K+",
+//       label: "Previous Papers",
+//       color: "text-pink-400"
+//     },
+//     {
+//       icon: Users,
+//       value: "10K+",
+//       label: "Active Students",
+//       color: "text-blue-400"
+//     },
+//     {
+//       icon: Star,
+//       value: "4.5+",
+//       label: "User Rating",
+//       color: "text-amber-400"
+//     }
+//   ];
 
-  const semesters = [
-    { id: 'semester1', name: 'Semester 1', subjects: [
-      { id: 'mathematics-i', name: 'Mathematics-I' },
-      { id: 'physics-i', name: 'Physics' },
-      { id: 'basic-electrical-and-electronics-engineering', name: 'Basic Electrical and Electronics Engineering' },
-      { id: 'engineering-graphics-and-design', name: 'Engineering Graphics and Design' },
-      { id: 'fundamentals-of-computer', name: 'Fundamentals of Computer' }
-    ]},
-    { id: 'semester2', name: 'Semester 2', subjects: [
-      { id: 'mathematics-ii', name: 'Mathematics-II' },
-      { id: 'programming-for-problem-solving', name: 'Programming for Problem Solving' },
-      { id: 'basic-civil-engineering-and-mechanics', name: 'Basic Civil Engineering and Mechanics' },
-      { id: 'chemistry-i', name: 'Chemistry-I' },
-      { id: 'english', name: 'English' }
-    ]},
-    { id: 'semester3', name: 'Semester3⏳', subjects: [
-      { id: 'mathematics-iii', name: 'Mathematics–III' },
-      { id: 'data-structures-and-algorithms', name: 'Data Structures and Algorithms' },
-      { id: 'operating-systems', name: 'Operating Systems' },
-      { id: 'digital-electronics-and-logic-design', name: 'Digital Electronics and Logic Design' },
-      { id: 'introduction-in-python', name: 'Introduction in Python' }
-    ]},
-    { id: 'semester4', name: 'Semester 4⏳', subjects: [
-      { id: 'discrete-structure', name: 'Discrete Structure' },
-      { id: 'design-and-analysis-of-algorithms', name: 'Design and Analysis of Algorithms' },
-      { id: 'computer-system-architecture', name: 'Computer System Architecture' },
-      { id: 'object-oriented-programming-with-java', name: 'Object Oriented Programming with Java' },
-      { id: 'database-management-systems', name: 'Database Management Systems' }
-    ]},
-    { id: 'semester5', name: 'Semester 5⏳', subjects: [
-      { id: 'web-development', name: 'Web Development' },
-      { id: 'machine-learning', name: 'Machine Learning' },
-      { id: 'compiler-design', name: 'Compiler Design' },
-      { id: 'computer-graphics', name: 'Computer Graphics' },
-      { id: 'artificial-intelligence', name: 'Artificial Intelligence' }
-    ]},
-    { id: 'semester6', name: 'Semester 6⏳', subjects: [
-      { id: 'mobile-computing', name: 'Mobile Computing' },
-      { id: 'cloud-computing', name: 'Cloud Computing' },
-      { id: 'information-security', name: 'Information Security' },
-      { id: 'distributed-systems', name: 'Distributed Systems' },
-      { id: 'human-computer-interaction', name: 'Human-Computer Interaction' }
-    ]},
-    { id: 'semester7', name: 'Semester 7⏳', subjects: [
-      { id: 'project-management', name: 'Project Management' },
-      { id: 'advanced-algorithms', name: 'Advanced Algorithms' },
-      { id: 'big-data-analytics', name: 'Big Data Analytics' },
-      { id: 'iot-systems', name: 'IoT Systems' },
-      { id: 'blockchain-technology', name: 'Blockchain Technology' }
-    ]},
-    { id: 'semester8', name: 'Semester 8⏳', subjects: [
-      { id: 'industry-training', name: 'Industry Training' },
-      { id: 'major-project', name: 'Major Project' },
-      { id: 'entrepreneurship', name: 'Entrepreneurship' },
-      { id: 'research-methodology', name: 'Research Methodology' },
-      { id: 'seminar', name: 'Seminar' }
-    ]}
-  ];
+//   const semesters = [
+//     { id: 'semester1', name: 'Semester 1', subjects: [
+//       { id: 'mathematics-i', name: 'Mathematics-I' },
+//       { id: 'physics-i', name: 'Physics' },
+//       { id: 'basic-electrical-and-electronics-engineering', name: 'Basic Electrical and Electronics Engineering' },
+//       { id: 'engineering-graphics-and-design', name: 'Engineering Graphics and Design' },
+//       { id: 'fundamentals-of-computer', name: 'Fundamentals of Computer' }
+//     ]},
+//     { id: 'semester2', name: 'Semester 2', subjects: [
+//       { id: 'mathematics-ii', name: 'Mathematics-II' },
+//       { id: 'programming-for-problem-solving', name: 'Programming for Problem Solving' },
+//       { id: 'basic-civil-engineering-and-mechanics', name: 'Basic Civil Engineering and Mechanics' },
+//       { id: 'chemistry-i', name: 'Chemistry-I' },
+//       { id: 'english', name: 'English' }
+//     ]},
+//     { id: 'semester3', name: 'Semester3⏳', subjects: [
+//       { id: 'mathematics-iii', name: 'Mathematics–III' },
+//       { id: 'data-structures-and-algorithms', name: 'Data Structures and Algorithms' },
+//       { id: 'operating-systems', name: 'Operating Systems' },
+//       { id: 'digital-electronics-and-logic-design', name: 'Digital Electronics and Logic Design' },
+//       { id: 'introduction-in-python', name: 'Introduction in Python' }
+//     ]},
+//     { id: 'semester4', name: 'Semester 4⏳', subjects: [
+//       { id: 'discrete-structure', name: 'Discrete Structure' },
+//       { id: 'design-and-analysis-of-algorithms', name: 'Design and Analysis of Algorithms' },
+//       { id: 'computer-system-architecture', name: 'Computer System Architecture' },
+//       { id: 'object-oriented-programming-with-java', name: 'Object Oriented Programming with Java' },
+//       { id: 'database-management-systems', name: 'Database Management Systems' }
+//     ]},
+//     { id: 'semester5', name: 'Semester 5⏳', subjects: [
+//       { id: 'web-development', name: 'Web Development' },
+//       { id: 'machine-learning', name: 'Machine Learning' },
+//       { id: 'compiler-design', name: 'Compiler Design' },
+//       { id: 'computer-graphics', name: 'Computer Graphics' },
+//       { id: 'artificial-intelligence', name: 'Artificial Intelligence' }
+//     ]},
+//     { id: 'semester6', name: 'Semester 6⏳', subjects: [
+//       { id: 'mobile-computing', name: 'Mobile Computing' },
+//       { id: 'cloud-computing', name: 'Cloud Computing' },
+//       { id: 'information-security', name: 'Information Security' },
+//       { id: 'distributed-systems', name: 'Distributed Systems' },
+//       { id: 'human-computer-interaction', name: 'Human-Computer Interaction' }
+//     ]},
+//     { id: 'semester7', name: 'Semester 7⏳', subjects: [
+//       { id: 'project-management', name: 'Project Management' },
+//       { id: 'advanced-algorithms', name: 'Advanced Algorithms' },
+//       { id: 'big-data-analytics', name: 'Big Data Analytics' },
+//       { id: 'iot-systems', name: 'IoT Systems' },
+//       { id: 'blockchain-technology', name: 'Blockchain Technology' }
+//     ]},
+//     { id: 'semester8', name: 'Semester 8⏳', subjects: [
+//       { id: 'industry-training', name: 'Industry Training' },
+//       { id: 'major-project', name: 'Major Project' },
+//       { id: 'entrepreneurship', name: 'Entrepreneurship' },
+//       { id: 'research-methodology', name: 'Research Methodology' },
+//       { id: 'seminar', name: 'Seminar' }
+//     ]}
+//   ];
 
-  const features = [
-    {
-      title: "Comprehensive Study Materials",
-      description: "Access detailed notes, question banks, and reference materials for all engineering subjects.",
-      icon: BookOpen,
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      title: "Previous Year Papers",
-      description: "Practice with past examination papers to understand the exam pattern and important topics.",
-      icon: FileText,
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Project",
-      description: "Access a wide range of academic and mini-projects across all engineering domains.",
-      icon: Calendar,
-      color: "from-green-500 to-teal-500"
-    },
-    {
-      title: "Performance Analytics",
-      description: "Track your progress and identify areas for improvement with our analytics tools.",
-      icon: BarChart3,
-      color: "from-orange-500 to-red-500"
-    }
-  ];
+//   const features = [
+//     {
+//       title: "Comprehensive Study Materials",
+//       description: "Access detailed notes, question banks, and reference materials for all engineering subjects.",
+//       icon: BookOpen,
+//       color: "from-purple-500 to-pink-500"
+//     },
+//     {
+//       title: "Previous Year Papers",
+//       description: "Practice with past examination papers to understand the exam pattern and important topics.",
+//       icon: FileText,
+//       color: "from-blue-500 to-cyan-500"
+//     },
+//     {
+//       title: "Project",
+//       description: "Access a wide range of academic and mini-projects across all engineering domains.",
+//       icon: Calendar,
+//       color: "from-green-500 to-teal-500"
+//     },
+//     {
+//       title: "Performance Analytics",
+//       description: "Track your progress and identify areas for improvement with our analytics tools.",
+//       icon: BarChart3,
+//       color: "from-orange-500 to-red-500"
+//     }
+//   ];
 
 
 
-  return (
-    <Layout>
-      <Head>
-        <title>StudyHub - Engineering Study Materials</title>
-        <meta name="description" content="Access premium study materials, previous year questions, and question banks for all engineering subjects" />
-      </Head>
+//   return (
+//     <Layout>
+//       <Head>
+//         <title>StudyHub - Engineering Study Materials</title>
+//         <meta name="description" content="Access premium study materials, previous year questions, and question banks for all engineering subjects" />
+//       </Head>
 
-      {/* Hero Section with enhanced animations and design */}
-      <section className="relative z-10 container mx-auto px-6 py-10 md:py-12">
-        {/* Animated decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 right-[10%] w-20 h-20 rounded-full bg-gradient-radial from-purple-500/20 to-transparent animate-pulse-slow"></div>
-          <div className="absolute bottom-10 left-[5%] w-32 h-32 rounded-full bg-gradient-radial from-pink-500/20 to-transparent animate-pulse-slow animation-delay-2000"></div>
-          <div className="absolute top-1/3 left-[15%] w-3 h-12 rounded-full bg-gradient-to-b from-purple-500/40 to-pink-500/0 animate-float"></div>
-          <div className="absolute bottom-1/4 right-[20%] w-3 h-12 rounded-full bg-gradient-to-b from-blue-500/40 to-purple-500/0 animate-float animation-delay-2000"></div>
-        </div>
+//       {/* Hero Section with enhanced animations and design */}
+//       <section className="relative z-10 container mx-auto px-6 py-10 md:py-12">
+//         {/* Animated decorative elements */}
+//         <div className="absolute inset-0 overflow-hidden pointer-events-none">
+//           <div className="absolute top-20 right-[10%] w-20 h-20 rounded-full bg-gradient-radial from-purple-500/20 to-transparent animate-pulse-slow"></div>
+//           <div className="absolute bottom-10 left-[5%] w-32 h-32 rounded-full bg-gradient-radial from-pink-500/20 to-transparent animate-pulse-slow animation-delay-2000"></div>
+//           <div className="absolute top-1/3 left-[15%] w-3 h-12 rounded-full bg-gradient-to-b from-purple-500/40 to-pink-500/0 animate-float"></div>
+//           <div className="absolute bottom-1/4 right-[20%] w-3 h-12 rounded-full bg-gradient-to-b from-blue-500/40 to-purple-500/0 animate-float animation-delay-2000"></div>
+//         </div>
         
-        <div className={`text-center relative transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <div className="inline-block mb-3">
-            <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300 flex items-center justify-center space-x-2 mb-6 animate-fade-in">
-              <Star className="w-4 h-4" />
-              <span>Engineering Excellence</span>
-            </div>
-          </div>
+//         <div className={`text-center relative transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+//           <div className="inline-block mb-3">
+//             <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300 flex items-center justify-center space-x-2 mb-6 animate-fade-in">
+//               <Star className="w-4 h-4" />
+//               <span>Engineering Excellence</span>
+//             </div>
+//           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient text-shadow-lg leading-tight">
-            Your Success
-            <br />
-            <span className="text-white">Starts Here</span>
-          </h1>
+//           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient text-shadow-lg leading-tight">
+//             Your Success
+//             <br />
+//             <span className="text-white">Starts Here</span>
+//           </h1>
           
-          <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Access premium study materials, previous year questions, and question banks for all engineering subjects
-          </p>
+//           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
+//             Access premium study materials, previous year questions, and question banks for all engineering subjects
+//           </p>
           
-          <div className="flex flex-wrap justify-center gap-6">
-            <Link 
-              href="/semesters" 
-              className="gradient-button px-8 py-4 text-lg font-medium flex items-center space-x-2 group"
-            >
-              <span>Browse Semesters</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
+//           <div className="flex flex-wrap justify-center gap-6">
+//             <Link 
+//               href="/semesters" 
+//               className="gradient-button px-8 py-4 text-lg font-medium flex items-center space-x-2 group"
+//             >
+//               <span>Browse Semesters</span>
+//               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+//             </Link>
             
-            <Link 
-              href="/service" 
-              className="glass-effect-hover px-8 py-4 text-lg font-medium border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300 button-3d"
-            >
-              My service
-            </Link>
-          </div>
-        </div>
+//             <Link 
+//               href="/service" 
+//               className="glass-effect-hover px-8 py-4 text-lg font-medium border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300 button-3d"
+//             >
+//               My service
+//             </Link>
+//           </div>
+//         </div>
 
-        {/* Stats with enhanced styling */}
-        <div className="mt-12 mb-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <div 
-                key={index} 
-                className="frosted-card p-6 hover-card"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="relative">
-                  {/* Decorative background circle */}
-                  <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 blur-md"></div>
+//         {/* Stats with enhanced styling */}
+//         <div className="mt-12 mb-6">
+//           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+//             {stats.map((stat, index) => (
+//               <div 
+//                 key={index} 
+//                 className="frosted-card p-6 hover-card"
+//                 style={{ animationDelay: `${index * 150}ms` }}
+//               >
+//                 <div className="relative">
+//                   {/* Decorative background circle */}
+//                   <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 blur-md"></div>
                   
-                  {/* Icon with gradient background */}
-                  <div className="relative z-10 flex items-center mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mr-4">
-                      <stat.icon className={`w-6 h-6 ${stat.color}`} />
-                    </div>
-                    <div className="text-3xl md:text-4xl font-bold text-white">{stat.value}</div>
-                  </div>
+//                   {/* Icon with gradient background */}
+//                   <div className="relative z-10 flex items-center mb-4">
+//                     <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mr-4">
+//                       <stat.icon className={`w-6 h-6 ${stat.color}`} />
+//                     </div>
+//                     <div className="text-3xl md:text-4xl font-bold text-white">{stat.value}</div>
+//                   </div>
                   
-                  <div className="text-white/70 text-sm font-medium">{stat.label}</div>
-                </div>
+//                   <div className="text-white/70 text-sm font-medium">{stat.label}</div>
+//                 </div>
                 
-                {/* Animated border effect */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500/0 via-purple-500/50 to-pink-500/0 opacity-70"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+//                 {/* Animated border effect */}
+//                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500/0 via-purple-500/50 to-pink-500/0 opacity-70"></div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
 
-      {/* Semester Tabs Section with enhanced design */}
-      <section className="relative z-10 container mx-auto px-6 py-12">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-1/3 left-0 w-full h-1/2 bg-gradient-to-r from-purple-900/10 via-pink-900/10 to-blue-900/10 opacity-50 blur-3xl"></div>
-        </div>
+//       {/* Semester Tabs Section with enhanced design */}
+//       <section className="relative z-10 container mx-auto px-6 py-12">
+//         {/* Background decorative elements */}
+//         <div className="absolute inset-0 -z-10 overflow-hidden">
+//           <div className="absolute top-1/3 left-0 w-full h-1/2 bg-gradient-to-r from-purple-900/10 via-pink-900/10 to-blue-900/10 opacity-50 blur-3xl"></div>
+//         </div>
         
-        <div className="text-center mb-10">
-          <div className="inline-block mb-3">
-            <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
-              Curriculum
-            </div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Explore by Semester</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
-            Find comprehensive study materials organized by semester and subject
-          </p>
-        </div>
+//         <div className="text-center mb-10">
+//           <div className="inline-block mb-3">
+//             <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
+//               Curriculum
+//             </div>
+//           </div>
+//           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Explore by Semester</h2>
+//           <p className="text-lg text-white/70 max-w-3xl mx-auto">
+//             Find comprehensive study materials organized by semester and subject
+//           </p>
+//         </div>
         
-        <div className="mb-8 overflow-x-auto pb-4 scrollbar-hide">
-          <div className="flex space-x-3 min-w-max px-1 justify-center">
-            {semesters.map((semester, index) => (
-              <button
-                key={semester.id}
-                onClick={() => setActiveTab(semester.id)}
-                className={`px-6 py-3 rounded-xl transition-all duration-300 whitespace-nowrap font-medium ${
-                  activeTab === semester.id 
-                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-neon' 
-                    : 'glass-effect-hover text-white/80 hover:text-white'
-                }`}
-                style={{ transitionDelay: `${index * 50}ms` }}
-              >
-                {semester.name}
-              </button>
-            ))}
-          </div>
-        </div>
+//         <div className="mb-8 overflow-x-auto pb-4 scrollbar-hide">
+//           <div className="flex space-x-3 min-w-max px-1 justify-center">
+//             {semesters.map((semester, index) => (
+//               <button
+//                 key={semester.id}
+//                 onClick={() => setActiveTab(semester.id)}
+//                 className={`px-6 py-3 rounded-xl transition-all duration-300 whitespace-nowrap font-medium ${
+//                   activeTab === semester.id 
+//                     ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-neon' 
+//                     : 'glass-effect-hover text-white/80 hover:text-white'
+//                 }`}
+//                 style={{ transitionDelay: `${index * 50}ms` }}
+//               >
+//                 {semester.name}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
         
-        <div className="frosted-card p-10 border border-white/10">
-          {semesters.map((semester) => (
-            <div 
-              key={semester.id} 
-              className={`${activeTab === semester.id ? 'animate-fade-in' : 'hidden'}`}
-            >
-              <div className="flex items-center justify-center mb-10">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mr-4">
-                  <BookOpen className="w-6 h-6 text-purple-300" />
-                </div>
-                <h3 className="text-2xl font-bold text-gradient">{semester.name} Subjects</h3>
-              </div>
+//         <div className="frosted-card p-10 border border-white/10">
+//           {semesters.map((semester) => (
+//             <div 
+//               key={semester.id} 
+//               className={`${activeTab === semester.id ? 'animate-fade-in' : 'hidden'}`}
+//             >
+//               <div className="flex items-center justify-center mb-10">
+//                 <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mr-4">
+//                   <BookOpen className="w-6 h-6 text-purple-300" />
+//                 </div>
+//                 <h3 className="text-2xl font-bold text-gradient">{semester.name} Subjects</h3>
+//               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {semester.subjects.map((subject, index) => (
-                  <div 
-                    key={subject.id} 
-                    className="glass-effect-hover rounded-xl p-6 hover-card group"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mr-3">
-                          <BookOpen className="w-5 h-5 text-purple-300" />
-                        </div>
-                        <h4 className="text-lg font-bold group-hover:text-gradient transition-all duration-300">{subject.name}</h4>
-                      </div>
-                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full flex items-center justify-center text-sm font-medium text-purple-300">
-                        {index + 1}
-                      </div>
-                    </div>
+//               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+//                 {semester.subjects.map((subject, index) => (
+//                   <div 
+//                     key={subject.id} 
+//                     className="glass-effect-hover rounded-xl p-6 hover-card group"
+//                     style={{ animationDelay: `${index * 100}ms` }}
+//                   >
+//                     <div className="flex items-center justify-between mb-6">
+//                       <div className="flex items-center">
+//                         <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center mr-3">
+//                           <BookOpen className="w-5 h-5 text-purple-300" />
+//                         </div>
+//                         <h4 className="text-lg font-bold group-hover:text-gradient transition-all duration-300">{subject.name}</h4>
+//                       </div>
+//                       <div className="w-8 h-8 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full flex items-center justify-center text-sm font-medium text-purple-300">
+//                         {index + 1}
+//                       </div>
+//                     </div>
                     
-                    <div className="flex items-center text-white/60 text-sm mb-6">
-                      <div className="flex items-center mr-4">
-                        <FileText className="w-4 h-4 mr-1" />
-                        <span>5 Units</span>
-                      </div>
-                      <div className="flex items-center">
-                        <Download className="w-4 h-4 mr-1" />
-                        <span>PDF Available</span>
-                      </div>
-                    </div>
+//                     <div className="flex items-center text-white/60 text-sm mb-6">
+//                       <div className="flex items-center mr-4">
+//                         <FileText className="w-4 h-4 mr-1" />
+//                         <span>5 Units</span>
+//                       </div>
+//                       <div className="flex items-center">
+//                         <Download className="w-4 h-4 mr-1" />
+//                         <span>PDF Available</span>
+//                       </div>
+//                     </div>
                     
-                    <Link 
-                      href={`/subject/${subject.id}`}
-                      className="w-full p-4 rounded-lg group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 border border-white/10 group-hover:border-transparent transition-all duration-300 flex items-center justify-between"
-                    >
-                      <span className="font-medium">View Materials</span>
-                      <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+//                     <Link 
+//                       href={`/subject/${subject.id}`}
+//                       className="w-full p-4 rounded-lg group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 border border-white/10 group-hover:border-transparent transition-all duration-300 flex items-center justify-between"
+//                     >
+//                       <span className="font-medium">View Materials</span>
+//                       <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+//                     </Link>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           ))}
+//         </div>
         
-        <div className="mt-8 text-center">
-          <Link 
-            href="/semesters"
-            className="inline-flex items-center space-x-2 px-8 py-4 glass-effect-hover rounded-xl hover:shadow-neon transition-all duration-300 group"
-          >
-            <span className="font-medium">View All Semesters</span>
-            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
-        </div>
-      </section>
+//         <div className="mt-8 text-center">
+//           <Link 
+//             href="/semesters"
+//             className="inline-flex items-center space-x-2 px-8 py-4 glass-effect-hover rounded-xl hover:shadow-neon transition-all duration-300 group"
+//           >
+//             <span className="font-medium">View All Semesters</span>
+//             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+//           </Link>
+//         </div>
+//       </section>
 
-      {/* Features Section with enhanced design */}
-      <section className="relative z-10 container mx-auto px-6 py-12 my-6">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-purple-900/20 to-transparent opacity-40"></div>
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-500/5 blur-3xl"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-pink-500/5 blur-3xl"></div>
-        </div>
+//       {/* Features Section with enhanced design */}
+//       <section className="relative z-10 container mx-auto px-6 py-12 my-6">
+//         {/* Background decorative elements */}
+//         <div className="absolute inset-0 -z-10 overflow-hidden">
+//           <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-purple-900/20 to-transparent opacity-40"></div>
+//           <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-500/5 blur-3xl"></div>
+//           <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-pink-500/5 blur-3xl"></div>
+//         </div>
         
-        <div className="text-center mb-10">
-          <div className="inline-block mb-3">
-            <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
-              Why Choose Us
-            </div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Features That Set Us Apart</h2>
-          <p className="text-lg text-white/70 max-w-3xl mx-auto">
-            Discover why thousands of engineering students trust StudyHub for their academic success
-          </p>
-        </div>
+//         <div className="text-center mb-10">
+//           <div className="inline-block mb-3">
+//             <div className="px-4 py-1 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-purple-300">
+//               Why Choose Us
+//             </div>
+//           </div>
+//           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Features That Set Us Apart</h2>
+//           <p className="text-lg text-white/70 max-w-3xl mx-auto">
+//             Discover why thousands of engineering students trust StudyHub for their academic success
+//           </p>
+//         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="glass-effect-hover rounded-2xl p-8 hover-card group"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 shadow-lg`}>
-                <feature.icon className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-all duration-300">{feature.title}</h3>
-              <p className="text-white/70">{feature.description}</p>
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+//           {features.map((feature, index) => (
+//             <div 
+//               key={index} 
+//               className="glass-effect-hover rounded-2xl p-8 hover-card group"
+//               style={{ animationDelay: `${index * 150}ms` }}
+//             >
+//               <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300 shadow-lg`}>
+//                 <feature.icon className="w-8 h-8" />
+//               </div>
+//               <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-all duration-300">{feature.title}</h3>
+//               <p className="text-white/70">{feature.description}</p>
               
-              {/* Animated arrow on hover */}
-              <Link href="/resources" className="mt-6 flex items-center text-purple-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
-                <span className="mr-2">Learn more</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-            </div>
-          ))}
-        </div>
-      </section>
+//               {/* Animated arrow on hover */}
+//               <Link href="/resources" className="mt-6 flex items-center text-purple-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
+//                 <span className="mr-2">Learn more</span>
+//                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+//               </Link>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
 
-      {/* Telegram Popup */}
-      {showTelegramPopup && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center p-4 pt-20">
-          <div className="frosted-card p-6 max-w-md w-full relative animate-fade-in">
-            <button 
-              onClick={() => setShowTelegramPopup(false)}
-              className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gradient mb-2">Join Our Community!</h3>
-              <p className="text-white/70 mb-6">Get instant updates, study tips, and connect with fellow students on Telegram.</p>
-              <div className="flex gap-3">
-                <a 
-                  href="https://t.me/rcetr1" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="gradient-button px-6 py-3 text-sm font-medium flex-1"
-                >
-                  Join Telegram
-                </a>
-                <button 
-                  onClick={() => setShowTelegramPopup(false)}
-                  className="px-6 py-3 text-sm font-medium border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300"
-                >
-                  Later
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </Layout>
-  );
-}
+//       {/* Telegram Popup */}
+//       {showTelegramPopup && (
+//         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center p-4 pt-20">
+//           <div className="frosted-card p-6 max-w-md w-full relative animate-fade-in">
+//             <button 
+//               onClick={() => setShowTelegramPopup(false)}
+//               className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors"
+//             >
+//               <X className="w-5 h-5" />
+//             </button>
+//             <div className="text-center">
+//               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+//                 <Users className="w-8 h-8 text-white" />
+//               </div>
+//               <h3 className="text-xl font-bold text-gradient mb-2">Join Our Community!</h3>
+//               <p className="text-white/70 mb-6">Get instant updates, study tips, and connect with fellow students on Telegram.</p>
+//               <div className="flex gap-3">
+//                 <a 
+//                   href="https://t.me/rcetr1" 
+//                   target="_blank" 
+//                   rel="noopener noreferrer"
+//                   className="gradient-button px-6 py-3 text-sm font-medium flex-1"
+//                 >
+//                   Join Telegram
+//                 </a>
+//                 <button 
+//                   onClick={() => setShowTelegramPopup(false)}
+//                   className="px-6 py-3 text-sm font-medium border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300"
+//                 >
+//                   Later
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </Layout>
+//   );
+// }
